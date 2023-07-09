@@ -13,4 +13,4 @@ spec:
     spec:
       containers:
       - name: goapp-container
-        image: ngostal/golang:TAG-REPLACED
+        image: ngostal/golang:cbb8b
