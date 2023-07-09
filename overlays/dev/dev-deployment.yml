@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goapp-deploy
+spec:
+  selector:
+    matchLabels:
+      app: goapp-pod
+  template:
+    metadata:
+      labels:
+        app: goapp-pod
+    spec:
+      containers:
+      - name: goapp-container
+        image: ngostal/golang:TAG-REPLACED
